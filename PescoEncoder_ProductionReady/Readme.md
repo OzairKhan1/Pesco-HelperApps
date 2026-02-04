@@ -36,15 +36,8 @@ This project is designed to be:
 ---
 
 ## 🏗️ Architecture Overview
-User
-↓
-[Nginx :80]
-↓
-[Flask App :5000] ← Docker
-↓
-[PostgreSQL :5432] ← Docker
-↓
-[S3 Backups via Cron + IAM Role]
+
+
 
 
 ---
