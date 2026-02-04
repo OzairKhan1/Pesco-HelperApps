@@ -1,0 +1,24 @@
+Summary:
+This S3 bucket policy restricts access to the pesco-db-backups bucket so that only the EC2 instance assuming the PescoEncoderRole IAM role can list, upload, and retrieve backup files. All other access is implicitly denied, preventing public exposure and enforcing least-privilege access for secure, automated database backups.
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowOnlyPescoEC2Backups",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::120569645542:role/PescoEncoderRole"
+            },
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::pesco-db-backups",
+                "arn:aws:s3:::pesco-db-backups/*"
+            ]
+        }
+    ]
+}
