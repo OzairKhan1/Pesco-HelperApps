@@ -17,6 +17,19 @@ This project is designed to be:
 ---
 
 ## 🏗️ Architecture Overview
+User
+|
+v
+[Nginx :80]
+|
+v
+[Flask App :5000] (Docker)
+|
+v
+[PostgreSQL :5432] (Docker)
+|
+v
+[S3 Backups via Cron + IAM Role]
 
 # PescoEncoder 🔐📦
 
