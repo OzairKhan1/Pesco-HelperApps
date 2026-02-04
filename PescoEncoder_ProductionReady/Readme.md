@@ -1,6 +1,6 @@
 # PescoEncoder 🔐📦
-**The .env file must be added to .gitignore and should never be committed to version control. In production environments, sensitive configuration values should be managed using AWS Secrets Manager or AWS Systems Manager Parameter Store, which are standard practices for production-grade applications. Any .env file present in the repository is included for reference purposes only and must not contain real secrets**
-PescoEncoder is a Dockerized Flask-based web application that converts:
+**The .env file must be added to .gitignore and should never be committed to version control. In production environments, sensitive configuration values should be managed using AWS Secrets Manager or AWS Systems Manager Parameter Store, which are standard practices for production-grade applications. Any .env file present in the repository is included for reference purposes only and must not contain real secrets**  
+**PescoEncoder is a Dockerized Flask-based web application that converts:**
 
 - **TXT → ZIP (with encoded images)**
 - **ZIP → TXT (decoded back)**
