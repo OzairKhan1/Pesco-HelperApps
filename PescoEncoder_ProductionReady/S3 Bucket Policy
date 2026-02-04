@@ -8,7 +8,7 @@ This S3 bucket policy restricts access to the pesco-db-backups bucket so that on
             "Sid": "AllowOnlyPescoEC2Backups",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::120569645542:role/PescoEncoderRole"
+                "AWS": "arn:aws:iam::<YourAccountID>:role/PescoEncoderRole"
             },
             "Action": [
                 "s3:PutObject",
